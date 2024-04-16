@@ -1,0 +1,16 @@
+
+r	java:S106"+Replace this use of System.out by a logger.(”ö˜øûÿÿÿÿ8¾¥µÞë1J$4c526a30-43dc-4a1b-a91d-1077f01a481d
+]	java:S125"<This block of commented-out lines of code should be removed.(£–Üåûÿÿÿÿ8´ÛáÞë1
+m	java:S106"+Replace this use of System.out by a logger.(º¼É°8ŒžÔÞë1J$1bfa6b16-f418-4536-bcf1-4b510c07b1e8
+š
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(µç˜æýÿÿÿÿ8¿¥µÞë1J$7bc8ceb3-f251-4cdf-9b84-0d4f792381a8
+ƒ	java:S125#"<This block of commented-out lines of code should be removed.(½šÃ‡þÿÿÿÿ8¿¥µÞë1J$e06512ed-6ce8-4e31-a8f4-939ee98f8e5a
+~	java:S125L"<This block of commented-out lines of code should be removed.(þ›§ˆ8À¥µÞë1J$38662dee-e8cf-49dd-8a45-40660a5afd93
+x
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úýÿÿÿÿ8ÄÔÞë1J$5dcc831e-10d9-4803-89a0-575579b7a80d
+N
+java:S1144"1Remove this unused private "reverseArray" method.(ºÓåÏ8¶ÛáÞë1
+‰
+java:S1144$"ARemove this unused private "getIndexOfSecondLargestArray" method.(µç˜æýÿÿÿÿ8À¥µÞë1J$b57d042a-130f-4e68-b01a-15c77c043a35
+}
+java:S1144M";Remove this unused private "getIndexOfLargestArray" method.(‹‡ÀR8À¥µÞë1J$16d8e7bd-7824-44b5-9a5d-84268e70e060
