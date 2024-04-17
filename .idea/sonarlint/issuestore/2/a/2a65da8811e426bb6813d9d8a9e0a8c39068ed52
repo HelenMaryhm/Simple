@@ -1,0 +1,62 @@
+
+r
+java:S1066B"/Merge this if statement with the enclosing one.(¹İóã8·ÑÿÒî1J$2fb76811-f34a-4742-8010-162c78e183a2
+™	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö‡…İûÿÿÿÿ8¸ÑÿÒî1J$7442fe35-8f0c-4bc7-93e2-c2a4116bbac7
+™	java:S117Ğ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö‡…İûÿÿÿÿ8¸ÑÿÒî1J$6ad28396-1e7a-4126-ac6b-94396769f177
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÕŒ¸èøÿÿÿÿ8õÑÿÒî1J$a11b3d9e-c69b-49a6-b0ac-1cf851201dda
+r	java:S106"+Replace this use of System.out by a logger.(”ö˜øûÿÿÿÿ8÷ÑÿÒî1J$b2d14e5c-bbf0-459e-a1d8-2e4671ce399f
+r	java:S106"+Replace this use of System.out by a logger.(ÿ©¤¹şÿÿÿÿ8÷ÑÿÒî1J$8c587a0c-50c8-41af-a9fd-90c6158ff63e
+~	java:S125'"<This block of commented-out lines of code should be removed.(åÂüÚ8øÑÿÒî1J$658e1242-b2bb-4042-84cc-1e8162181735
+ƒ	java:S125)"<This block of commented-out lines of code should be removed.(’ûæœşÿÿÿÿ8øÑÿÒî1J$3b87cc89-39ad-454d-bd99-967b94697a0b
+ƒ	java:S125+"<This block of commented-out lines of code should be removed.(Ÿë¸ğüÿÿÿÿ8øÑÿÒî1J$553e4cd3-65e8-4d1c-b4c1-720013d16cdc
+ƒ	java:S125/"<This block of commented-out lines of code should be removed.(¾öæ„ÿÿÿÿÿ8øÑÿÒî1J$1af65214-8fce-4987-adaa-91fe74ea65c5
+~	java:S1251"<This block of commented-out lines of code should be removed.(û§Å8ùÑÿÒî1J$4f2e35d2-5499-428a-9dbe-839a9c3d7398
+m	java:S106I"+Replace this use of System.out by a logger.(³Š„8ùÑÿÒî1J$2af9f3ea-b4aa-494d-a44b-13192722524d
+m	java:S106J"+Replace this use of System.out by a logger.(œ­³¥8ùÑÿÒî1J$5e7ebefc-e4de-425b-b3ba-076b47a7ab87
+m	java:S106K"+Replace this use of System.out by a logger.(õûÂš8ùÑÿÒî1J$3b930a51-a42b-4653-a220-c6b94ee805e1
+~	java:S125P"<This block of commented-out lines of code should be removed.(„°üÔ8úÑÿÒî1J$4fd2a31d-8cf4-43a9-a2ec-f134aa48de71
+m
+java:S1659W"%Declare "element" on a separate line.(´ï›şÿÿÿÿ8ûÑÿÒî1J$d85d7432-cd98-4476-b2dc-27e82c99867a
+}	java:S125z"<This block of commented-out lines of code should be removed.(ü¹‹u8üÑÿÒî1J$f90a306d-949c-496a-bb6a-48d777c666d8
+„	java:S125’"<This block of commented-out lines of code should be removed.(ÈÌË‚ùÿÿÿÿ8ıÑÿÒî1J$69db5db2-7b3d-4008-8d37-c78eb3d60f6e
+	java:S125"<This block of commented-out lines of code should be removed.(ä°©·8ıÑÿÒî1J$19b4764d-91f5-476e-82d8-f8f5638cb17f
+„	java:S125¤"<This block of commented-out lines of code should be removed.(§Ú²óüÿÿÿÿ8ıÑÿÒî1J$b57b2994-e430-49f5-89e2-c3ccb010f965
+	java:S125°"<This block of commented-out lines of code should be removed.(²¸¾‚8ıÑÿÒî1J$aed6a6c4-ec89-4fdf-9d56-53a657faa040
+	java:S125¸"<This block of commented-out lines of code should be removed.(—•Ë•8ıÑÿÒî1J$6433fb62-8c7a-4090-a7a4-9cc1bba7dc30
+„	java:S125É"<This block of commented-out lines of code should be removed.(Š±Ášÿÿÿÿÿ8ıÑÿÒî1J$d392f2e1-5d6c-410c-aedd-3b4815b95c9f
+„	java:S125İ"<This block of commented-out lines of code should be removed.(çĞ™ìıÿÿÿÿ8şÑÿÒî1J$a1fcf4cd-4259-4798-826e-95fc2c13e6ec
+„	java:S125â"<This block of commented-out lines of code should be removed.(ò©èşÿÿÿÿ8şÑÿÒî1J$82fca3a4-34e5-457f-babd-c513f766c2b1
+n	java:S106ô"+Replace this use of System.out by a logger.(º¼É°8şÑÿÒî1J$2ffce355-10da-4e99-8bb4-d53904ce86b7
+„	java:S125ú"<This block of commented-out lines of code should be removed.(áÛÓÌşÿÿÿÿ8şÑÿÒî1J$3363dd34-3904-4ee1-9f76-af3bf9e57337
+n	java:S106†"+Replace this use of System.out by a logger.(º¼É°8ÿÑÿÒî1J$03062e43-40d8-44b5-92b9-b43559b0345d
+„	java:S125š"<This block of commented-out lines of code should be removed.(£–Üåûÿÿÿÿ8ÿÑÿÒî1J$6899790e-7d90-41af-a7cf-2ba2b4498494
+n	java:S106ª"+Replace this use of System.out by a logger.(º¼É°8€ÒÿÒî1J$b8dfac38-3f78-4021-9b0e-29e8df28ec35
+›
+java:S3776°"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(µç˜æıÿÿÿÿ8€ÒÿÒî1J$f14067ea-0b87-4fae-a627-dfab0ea289e8
+„	java:S125¯"<This block of commented-out lines of code should be removed.(½šÃ‡şÿÿÿÿ8€ÒÿÒî1J$497f66c1-ee9d-4197-9dba-f802adc87814
+	java:S125Ø"<This block of commented-out lines of code should be removed.(ş›§ˆ8ÒÿÒî1J$c6e31cf8-8dc4-4ba2-8ef4-377306aa43c1
+x
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8ÒÿÒî1J$85acd548-ec85-4bd7-a496-24324558102e
+x
+java:S1128"0Remove this unused import 'java.nio.ByteBuffer'.(¿¢×±úÿÿÿÿ8ÒÿÒî1J$7a40bae6-8935-4b4d-acec-fb2cecde91a4
+u
+java:S1144S"2Remove this unused private "findFrequency" method.(Ïâã8‚ÒÿÒî1J$ad5a30c4-c548-4751-abde-c056d859ad87
+‚
+java:S1144h":Remove this unused private "findMaximumDifference" method.(©®œ”øÿÿÿÿ8‚ÒÿÒî1J$91384fff-0872-4121-ab14-c1d44514b841
+y
+java:S1144{"6Remove this unused private "findLeaderInArray" method.(“Ğ…8‚ÒÿÒî1J$1bbfa387-9db1-40a1-99e5-151504747868
+~
+java:S1144¼"5Remove this unused private "leftRotateDTimes" method.(µ‘“ßøÿÿÿÿ8‚ÒÿÒî1J$37bb23c1-2e00-49ed-8a9f-3a3a6a04c612
+w
+java:S1144ã"3Remove this unused private "moveZerosToEnd" method.(Ë†•8‚ÒÿÒî1J$f2cadf5c-5e7c-48e2-b219-f0b52b0af995
+~
+java:S1144û"5Remove this unused private "removeDuplicates" method.(Ê‚‹ÿÿÿÿÿ8‚ÒÿÒî1J$430e6d41-bd35-41a6-89e6-555704e1b912
+z
+java:S1144"1Remove this unused private "reverseArray" method.(û€Ä‰üÿÿÿÿ8‚ÒÿÒî1J$80a35fa0-6b72-4083-97fa-f4e0807ff273
+u
+java:S1144›"1Remove this unused private "reverseArray" method.(ºÓåÏ8‚ÒÿÒî1J$d3860dee-30ac-4815-be94-6e548478e435
+Š
+java:S1144°"ARemove this unused private "getIndexOfSecondLargestArray" method.(µç˜æıÿÿÿÿ8‚ÒÿÒî1J$5d51a83c-c003-4702-a8c5-ed35f0424d16
+~
+java:S1144Ù";Remove this unused private "getIndexOfLargestArray" method.(‹‡ÀR8‚ÒÿÒî1J$46d7cc7c-9c40-418a-9e1f-ee6030c4daea
