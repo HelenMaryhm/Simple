@@ -1,0 +1,3 @@
+Main-Class: org.example.exe.service.Main
+
+
