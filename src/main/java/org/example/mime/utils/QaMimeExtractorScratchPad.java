@@ -85,6 +85,25 @@ public class QaMimeExtractorScratchPad {
         System.out.println(encodedContent);
     }
 
+    public static MimeMultipart getMimeMultipart(MimeMessage mimeMessage) throws MessagingException, IOException {
+        Object object = mimeMessage.getContent();
+        if (object instanceof InputStream) {
+            ByteArrayDataSource dataSource = new ByteArrayDataSource((InputStream) mimeMessage.getContent(), "application/octet-stream");
+            return new MimeMultipart(dataSource);
+        } else {
+            throw new IOException("The content is single part.");
+        }
+    }
+
+    public static MimeMultipart getMimeMultipartFromStream(InputStream inputStream) throws MessagingException, IOException {
+        try {
+            ByteArrayDataSource dataSource = new ByteArrayDataSource(inputStream, "application/octet-stream");
+            return new MimeMultipart(dataSource);
+        }catch (Exception e){
+            throw new IOException("The content is single part.\n"+e.getMessage());
+        }
+    }
+
     public static void printInputMimeStructure(String filePath) {
         try {
             MimeMessage input = getMimeMessageFromFilePath(filePath);

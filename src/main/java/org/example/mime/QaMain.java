@@ -2,6 +2,7 @@ package org.example.mime;
 
 import org.apache.commons.codec.binary.Base64InputStream;
 import org.example.mime.cmdgutils.YBase64;
+import org.example.mime.test.V3GetMessageSimpleBodyBugsIT;
 
 import javax.annotation.Nonnull;
 import javax.mail.MessagingException;
@@ -34,7 +35,7 @@ public class QaMain {
 
     public static void main(String[] args) throws MessagingException, IOException {
         System.out.println("Thank You Jesus");
-
+        V3GetMessageSimpleBodyBugsIT.testCertifiedVidForYiv2();
 
 //        String encodedString = "part-1 data";
 //        System.out.println(getByteLength(encodedString));
@@ -60,8 +61,7 @@ public class QaMain {
         return new String(decodedBytes, StandardCharsets.UTF_8);
     }
 
-    public static boolean areBracketsBalanced(String s)
-    {
+    public static boolean areBracketsBalanced(String s) {
         int i = -1;
         char[] stack = new char[s.length()];
         for (char ch : s.toCharArray()) {
@@ -77,7 +77,8 @@ public class QaMain {
                     return false;
             }
         }
-        return i == -1
+        return i == -1;
+    }
 
 //    String str = "cGFydC00IGRhdGE=";
 //        System.out.println(getByteLength(str));

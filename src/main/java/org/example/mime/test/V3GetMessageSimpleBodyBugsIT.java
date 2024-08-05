@@ -1,18 +1,21 @@
 package org.example.mime.test;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.example.mime.beans.MessageStructureBean;
+import org.example.mime.beans.StreamedMultipartFooterResponse;
 import org.example.mime.utils.QaMimeExtractorScratchPad;
-import org.example.mime.utils.QaMimeExtractor;
 import org.example.mime.utils.QaMimeValidator;
 
-import javax.annotation.Nonnull;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.IOException;
+import java.io.InputStream;
 
 
 public final class V3GetMessageSimpleBodyBugsIT {
 
-    private V3GetMessageSimpleBodyBugsIT(@Nonnull){
+    private V3GetMessageSimpleBodyBugsIT(){
 
     }
 
@@ -95,13 +98,45 @@ public final class V3GetMessageSimpleBodyBugsIT {
         //String inputFilePath = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/java/org/example/mime/resources/testCertifiedVidForYiv1.msg";
         //String inputFilePathSingle = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/resources/jedi/manual-scripts/01_V3GetMessageSimpleBodyAttachmentsIT/01_02_testGetMessageSimpleBodyWithInLineAttachmentsForce/Inbox1KB.msg";
 
-        String inputFilePathPdf = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/java/org/example/mime/resources/msgWithPDF.msg";
-        String outputFilePathPdf = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/java/org/example/mime/resources/msgWithPDF-output.msg";
+        //String inputFilePathPdf = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/java/org/example/mime/resources/msgWithPDF.msg";
+        //String outputFilePathPdf = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/java/org/example/mime/resources/msgWithPDF-output.msg";
 
-        MimeMessage input = QaMimeExtractorScratchPad.getMimeMessageFromFilePath(inputFilePathPdf);
-        MimeMessage output = QaMimeExtractorScratchPad.getMimeMessageFromFilePath(outputFilePathPdf);
+        String outputFilePathEmptyPart = "/Users/hmaryt/Documents/TYY/ML/Simple/src/main/resources/jedi/manual-scripts/04_V3GetMessageSimpleBodyBugsIT/01-testMimeWithEmptyPart/response-00001.msg";
+
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        //MimeMessage input = QaMimeExtractorScratchPad.getMimeMessageFromFilePath(outputFilePathPdf);
+        //MimeMessage output = QaMimeExtractorScratchPad.getMimeMessageFromFilePath(outputFilePathEmptyPart);
+        InputStream inputStream = QaMimeExtractorScratchPad.getFileAsFileInputStream(outputFilePathEmptyPart);
+        MimeMultipart mimeMultipart = QaMimeExtractorScratchPad.getMimeMultipartFromStream(inputStream);
+        //MessageStructureBean messageStructureBean = QaMimeExtractor.getMessageStructureBean(mimeMultipart, objectMapper);
+        //QaMimeExtractor.printStringFromClass(messageStructureBean, objectMapper);
+
+        System.out.println(mimeMultipart.getCount());
+        System.out.println("MessageStructureBean");
+
+        try {
+            MessageStructureBean messageStructureBean = objectMapper.readValue((InputStream) mimeMultipart.getBodyPart(0).getContent(), MessageStructureBean.class);
+        } catch (IOException | MessagingException e) {
+            throw new IllegalStateException("Error reading MessageStructureBean", e);
+        }
+
+        for (int i = 1; i < mimeMultipart.getCount()-1; i++) {
+
+            System.out.println(mimeMultipart.getBodyPart(i).getContentType());
+
+            System.out.println(QaMimeExtractorScratchPad.getStringFromStream((InputStream) mimeMultipart.getBodyPart(i).getContent()));
+        }
+
+        System.out.println("Footer");
+        try {
+            StreamedMultipartFooterResponse
+                    streamedMultipartFooterResponse = objectMapper.readValue((InputStream) mimeMultipart.getBodyPart(mimeMultipart.getCount()-1).getContent(), StreamedMultipartFooterResponse.class);
+        } catch (IOException | MessagingException e) {
+            throw new IllegalStateException("Error reading MessageStructureBean", e);
+        }
         //QaMimeExtractorScratchPad.printOutputMimeStructure(outputFilePathPdf);
-        QaMimeValidator.validateMimeMessage(input, output);
+        //QaMimeValidator.validateMimeMessage(input, output);
 
     }
 
